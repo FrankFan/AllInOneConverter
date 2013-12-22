@@ -1,0 +1,8 @@
+E:\DevCenter\AllMyPoject\AllInOneConverter\AllInOneConverter\bin\Debug\AllInOneConverter.exe
+E:\DevCenter\AllMyPoject\AllInOneConverter\AllInOneConverter\bin\Debug\AllInOneConverter.pdb
+E:\DevCenter\AllMyPoject\AllInOneConverter\AllInOneConverter\obj\Debug\AllInOneConverter.Properties.Resources.resources
+E:\DevCenter\AllMyPoject\AllInOneConverter\AllInOneConverter\obj\Debug\AllInOneConverter.csproj.GenerateResource.Cache
+E:\DevCenter\AllMyPoject\AllInOneConverter\AllInOneConverter\obj\Debug\AllInOneConverter.exe
+E:\DevCenter\AllMyPoject\AllInOneConverter\AllInOneConverter\obj\Debug\AllInOneConverter.pdb
+E:\DevCenter\AllMyPoject\AllInOneConverter\AllInOneConverter\obj\Debug\AllInOneConverter.Form1.resources
+E:\DevCenter\AllMyPoject\AllInOneConverter\AllInOneConverter\obj\Debug\AllInOneConverter.csprojResolveAssemblyReference.cache
