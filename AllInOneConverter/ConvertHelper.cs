@@ -69,18 +69,18 @@ namespace AllInOneConverter
         /// <returns>返回Base64字符串</returns>
         public static string EncodeBase64(string codeType, string code)
         {
-            string encode = "";
+            string strEncode = string.Empty;
             byte[] bytes = System.Text.Encoding.GetEncoding(codeType).GetBytes(code);
 
             try
             {
-                encode = System.Convert.ToBase64String(bytes);
+                strEncode = System.Convert.ToBase64String(bytes);
             }
             catch
             {
-                encode = code;
+                strEncode = code;
             }
-            return encode;
+            return strEncode;
         }
 
         /// <summary>
@@ -91,17 +91,17 @@ namespace AllInOneConverter
         /// <returns>返回解码后的字符串</returns>
         public static string DecodeBase64(string codeType, string code)
         {
-            string decode = "";
+            string strDecode = string.Empty;
             byte[] bytes = System.Convert.FromBase64String(code);
             try
             {
-                decode = System.Text.Encoding.GetEncoding(codeType).GetString(bytes);
+                strDecode = System.Text.Encoding.GetEncoding(codeType).GetString(bytes);
             }
             catch
             {
-                decode = code;
+                strDecode = code;
             }
-            return decode;
+            return strDecode;
         }
 
         /// <summary>
@@ -152,17 +152,17 @@ namespace AllInOneConverter
         ///<returns></returns>
         public static string MD5(string text,int length)
         {
-            string encrytStr = string.Empty;
+            string strEncryt = string.Empty;
             MD5CryptoServiceProvider hashmd5;
             hashmd5 = new MD5CryptoServiceProvider();
-            encrytStr = BitConverter.ToString(hashmd5.ComputeHash(Encoding.Default.GetBytes(text.ToCharArray()))).Replace("-", "").ToLower();   
+            strEncryt = BitConverter.ToString(hashmd5.ComputeHash(Encoding.Default.GetBytes(text.ToCharArray()))).Replace("-", "").ToLower();   
             //将所有字母变小写
             if (length == 16)
             {
-                encrytStr = encrytStr.Substring(8, 16).ToLower();
+                strEncryt = strEncryt.Substring(8, 16).ToLower();
             }
 
-            return encrytStr;
+            return strEncryt;
         }
 
     }
